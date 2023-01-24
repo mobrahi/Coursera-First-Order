@@ -1,0 +1,163 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white ;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: aliceblue;
+  border-radius: 0;
+  border: 0;
+  min-height: 90px;
+  border: solid;
+  border-block-color: black;
+}
+
+.container {
+  /*padding-left: 30px;*/
+  margin: auto;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 2.5em;
+  text-transform: none;
+  font-weight: bold;
+  margin: auto;
+  line-height: normal;
+  float: left;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: auto;
+ }
+
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+  border: solid black;
+  background-color: lightyellow;
+}
+
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -15px;
+}
+/* END HEADER */
+
+
+
+/* SINGLE CATEGORY PAGE */
+
+h2{
+
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-item-description {
+
+  padding-right: 30px;
+  background-color: lightgray;
+  /*border: 1px solid black;*/
+  margin: 1px 1px;
+  padding: auto;
+}
+
+h3.menu-item-title {
+  position: relative;
+  margin: 30px 0 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.menu-item-details {
+  font-size: .9em;
+  font-style: normal;
+  text-align: left;
+}
+
+/* END SINGLE CATEGORY PAGE */
+
+
+/********** Desktop md devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  /* Header */
+
+  /* End Header */
+
+/* Home Page */
+
+    /*float: left;
+    border: 1px;*/
+  } 
+  
+  .menu-item-description {
+    text-align: center;
+  }
+
+  /* End Home Page */
+}
+
+/********** Tablet sm devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+/* Home Page */
+
+  .menu-item-description {
+    text-align: center;
+  }
+  /* End Home Page */
+}
+
+
+/********** Mobile xs devices only **********/
+@media (max-width: 767px) {
+/* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 7vw; /* 1vw = 1% of viewport width */
+  }
+
+    #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+  /* End Header */
+
+  /* Home Page */
+
+  .menu-item-description {
+    text-align: center;
+  }
+}   
